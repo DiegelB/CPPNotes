@@ -1,0 +1,35 @@
+C++ notes: GWIN-29932-ZYWW-34 
+
+	Chapter 1:
+		
+		- each byte in memory has a unique address that identifies it. 
+		- each memory location can only store 1 value at a time because it is designed that way. 
+		- process control unit:
+			1. fetch instructions- copy to ram
+			2. decode instructions- determine instructions
+			3. execute
+			4. store results in ram
+		- CPU controls if the information is sent to the ALU (math unit) or execute commands. 
+		- Hz = cycles per second G = Giga = Billions 
+		- GHz = Billions of cycles per second 
+		- IPS: Instructions per second = GHz *# of cores
+		- IPS = 2.4 * 8 = 19.2 billion
+		
+		- Machine language are written in binary
+			- Difficult to read
+			- Error prone
+			- difficult to write programs in, but possible. 
+		- low-level language used for communication with computer hardware directly (assembly)
+		- high-level language is closer to human language and it is what we code in
+		 
+		- programming process:
+			1. analyze the program and develop a problem specification 
+			2. design an algorithmic model to solve the problem 
+				1. pseudocode 
+				2. flowchart
+			3. check your algorithm for errors 
+			4. type the program based on the model 
+			5. test and debug 
+			6. if the program works you're done, otherwise repeat steps 3-4 until it works
+
+			
