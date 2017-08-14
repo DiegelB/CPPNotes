@@ -1,4 +1,4 @@
-C++ notes: GWIN-29932-ZYWW-34 
+C++ notes: 
 
 	Chapter 1:
 		
