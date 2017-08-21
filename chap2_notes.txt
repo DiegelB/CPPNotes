@@ -1,0 +1,105 @@
+Chapter 2:
+	
+	- Parts of C++ program:
+	
+		 // sample c++ comment
+		#include <iostream> // preprocessor directive
+		using namespace std; // which namespace to use
+		
+		int main() { // beginning of function named main (with beginning block '{')
+			cout << "Hello, there!"; // output statement
+			return 0; // send 0 to the os  
+		} // end of the main block ('}')
+		
+	- // this is a single line comment 
+	- /* this is
+	     a block comment */
+	
+	- Transitions of a c++ language: 
+		- source code -> compiler -> assembly language code -> assembler -> object code in machine language
+		-> linker (<- library object code) -> complete object code -> loader -> complete object code loaded in memory
+		-> hardware -> results
+		
+	- Comments: Give information to human readers of the code.
+	- Include directive: 
+		- The linker includes object code from a libray
+		- A library is a external collection of commonly used code
+	- Using Directive:
+		- tells compiler where to look for names not defined in the program
+		- std is short for the standard namespace or the standard c++ library
+		- Like the pow() function. The ones you have not defined yourself.
+	- You need a main function because that is all the code of your program. 
+	
+	- Identifiers (data items) can be constants or variables. 
+		- they are stored in memory at a unique address. 
+		- in c++, names are used in place of addresses
+		- case-sensitive, milesDriven and MilesDriven are different variables.
+		- 2Miles, $miles2, "miles 2", miles-2 is an illegal variable
+		- milesTwo, miles2, Miles2, or miles_two is legal
+		
+	- Variable definition:
+		- int numGrade; // whole numbers
+		- double realNumber; // real, decimal point, numbers
+		- char letterA; // single ascii character
+		
+	- Integer data types:
+		- short | 2 bytes | -32,768 to +32,768
+		- unsigned short | 2 bytes | 0 to +65,535
+		- int | 4 bytes | -2,147,483,648 to +2,147,483,648
+		- unsigned int | 4 bytes | 0 to 4,294,967,295
+		- long | bytes | -2,147,483,648 to +2,147,483,648 (bigger than an int in some systems)
+		- unsigned long | 4 bytes | o to 4,294,967,295
+	- Float data types:
+		- Single precision | float | 4 bytes | +-3.4E-38 to +-3.4E38
+		- Double precision | double | 8 bytes | +-1.7E-308 to +-1.7E308
+		- Long double precision | long double | 8 bytes | +-1.7E-308 to +-1.7E308 (longer in some systems)
+		
+	- char data type: 
+		- used to hold character or very small int values
+		- usually 1 byte of memory
+		- numeric value of character from the character set is stored in memory.
+		- code: 
+			char letter;
+			letter = 'C'; // always use single quotes or an int value (if you want to use the ascii code)
+	- string data type:
+		- special data type use #include <string> to import the string library
+		- can define string variables in program:
+			string firstName, lastName;
+		- can recieve values with assignment operator:
+			firstName = "George";
+			lastName = "Washington";
+		- can be displayed via cout:
+			cout << firstName << " " << lastName;
+	
+	- string operations: 
+		- getline
+			- used to put a line of input into a string
+			- reads everything up to a newline (enter key)
+			- *** cin only reads a string literal up to ANY whitespace (like spacebar).
+			string name;
+			cout << "Please input your name\n";
+			getline(cin, name);
+		- +
+			- used to add one string to the end of another
+			string firstName = "Ben";
+			string lastName = "Diegel";
+			finalName = firstName + " " + lastName; // output is "Ben Diegel"
+		- substr(start, length)
+			- extract a copy of a substring from position start that contains length characters
+			lastNameRev = lastName.substr(0, 2); // lastName is diegel, lastNameRev is "die"
+		- erase(start, length)
+			- just like substr(), but erases the characters rather than copy.
+			lastName.erase(0, 2); // lastName is Diegel, output is "gel"
+		- replace(start, length, repstr)
+			- replaces substring at position start with length characters and replaces with repstr.
+			string test = "test"
+			lastName.replace(0, 2, test); // lastName is diegel, output is "testgel"
+		 
+	- using namespace is a reserved word. std is reffering to what namespace to use. std is standard or default.
+		- string or cout/cin is found within the std namespace.
+			
+	
+
+		
+
+	
